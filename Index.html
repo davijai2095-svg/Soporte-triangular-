@@ -44,12 +44,608 @@
             margin: 0 auto;
             background: rgba(255, 255, 255, 0.05);
             border-radius: 20px;
+            padding: 30px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .logo {
+            font-size: 2.8rem;
+            font-weight: 800;
+            background: linear-gradient(115deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 15px;
+            text-shadow: 0 2px 10px rgba(255, 0, 80, 0.3);
+        }
+        
+        .product-title {
+            font-size: 2.2rem;
+            margin: 15px 0;
+            color: white;
+            text-shadow: 0 2px 5px rgba(0,0,0,0.5);
+        }
+        
+        .image-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .main-image {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 3px solid rgba(255,255,255,0.1);
+        }
+        
+        .main-image:hover {
+            transform: scale(1.03);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+        }
+        
+        .thumbnails {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .thumbnail {
+            width: 90px;
+            height: 90px;
+            border-radius: 12px;
+            cursor: pointer;
+            opacity: 0.7;
+            transition: all 0.3s ease;
+            object-fit: cover;
+            border: 2px solid transparent;
+        }
+        
+        .thumbnail:hover, .thumbnail.active {
+            opacity: 1;
+            transform: scale(1.1);
+            box-shadow: 0 0 20px var(--primary);
+            border-color: var(--primary);
+        }
+        
+        .price {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            margin: 30px 0;
+            flex-wrap: wrap;
+        }
+        
+        .current-price {
+            font-size: 2.8rem;
+            font-weight: 800;
+            color: #ffcc00;
+            text-shadow: 0 2px 5px rgba(0,0,0,0.5);
+        }
+        
+        .old-price {
+            text-decoration: line-through;
+            color: #999;
+            font-size: 2rem;
+        }
+        
+        .discount {
+            background: linear-gradient(45deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 10px 20px;
+            border-radius: 30px;
+            font-weight: 700;
+            font-size: 1.3rem;
+            box-shadow: 0 5px 15px rgba(255, 0, 80, 0.3);
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin: 40px 0;
+        }
+        
+        .feature {
+            text-align: center;
+            padding: 25px;
+            background: rgba(255, 255, 255, 0.08);
+            border-radius: 15px;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+        
+        .feature:hover {
+            transform: translateY(-8px);
+            background: rgba(255, 255, 255, 0.12);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+        
+        .feature i {
+            font-size: 2.8rem;
+            margin-bottom: 15px;
+            color: #00f2ea;
+            background: linear-gradient(45deg, var(--secondary), var(--primary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .feature h3 {
+            margin-bottom: 12px;
+            font-size: 1.4rem;
+        }
+        
+        .form-section {
+            background: rgba(255, 255, 255, 0.08);
+            padding: 30px;
+            border-radius: 15px;
+            margin: 30px 0;
+            border: 1px solid rgba(255,255,255,0.05);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        
+        .form-title {
+            text-align: center;
+            margin-bottom: 25px;
+            color: #00f2ea;
+            font-size: 1.7rem;
+            text-shadow: 0 2px 5px rgba(0,0,0,0.3);
+        }
+        
+        .form-group {
+            margin-bottom: 22px;
+        }
+        
+        .form-label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: 600;
+            color: #ddd;
+            font-size: 1.1rem;
+        }
+        
+        .form-input {
+            width: 100%;
+            padding: 16px;
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+        
+        .form-input:focus {
+            outline: none;
+            border-color: #00f2ea;
+            background: rgba(255, 255, 255, 0.15);
+            box-shadow: 0 0 15px rgba(0, 242, 234, 0.3);
+        }
+        
+        .required {
+            color: #ff0050;
+        }
+        
+        .submit-btn {
+            width: 100%;
+            background: linear-gradient(45deg, #ff0050, #00f2ea);
+            color: white;
             padding: 20px;
-            backdrop-filter: blur(
+            border: none;
+            border-radius: 50px;
+            font-size: 1.3rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 25px;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(255, 0, 80, 0.4);
+        }
+        
+        .submit-btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 25px rgba(255, 0, 80, 0.5);
+        }
+        
+        .submit-btn:active {
+            transform: translateY(-2px);
+        }
+        
+        .submit-btn:disabled {
+            opacity: 0.7;
+            cursor: not-allowed;
+            transform: none;
+            box-shadow: none;
+        }
+        
+        .submit-btn .btn-text {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .submit-btn .loading-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, #ff0050, #00f2ea);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .submit-btn.loading .loading-overlay {
+            opacity: 1;
+        }
+        
+        .trust-badges {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 40px 0;
+            flex-wrap: wrap;
+        }
+        
+        .trust-badge {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 12px 25px;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+        
+        .trust-badge:hover {
+            transform: scale(1.05);
+            background: rgba(255, 255, 255, 0.15);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .trust-badge i {
+            color: #ffcc00;
+            font-size: 1.3rem;
+        }
+        
+        .success-message {
+            background: rgba(0, 255, 0, 0.1);
+            border: 1px solid rgba(0, 255, 0, 0.3);
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            margin-top: 25px;
+            display: none;
+            animation: fadeIn 0.5s ease;
+        }
+        
+        .loading {
+            display: inline-block;
+            width: 22px;
+            height: 22px;
+            border: 3px solid rgba(255,255,255,.3);
+            border-radius: 50%;
+            border-top-color: #fff;
+            animation: spin 1s ease-in-out infinite;
+        }
+        
+        .progress-bar {
+            height: 5px;
+            width: 0;
+            background: linear-gradient(45deg, #ff0050, #00f2ea);
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 9999;
+            transition: width 0.5s ease;
+            box-shadow: 0 0 10px rgba(255, 0, 80, 0.5);
+        }
+        
+        .tiktok-cta {
+            text-align: center;
+            margin: 25px 0;
+            padding: 18px;
+            background: rgba(255, 0, 80, 0.1);
+            border-radius: 12px;
+            border: 1px solid var(--primary);
+            box-shadow: 0 5px 15px rgba(255, 0, 80, 0.2);
+        }
+        
+        .tiktok-cta p {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin: 0;
+        }
+        
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            
+            .product-title {
+                font-size: 1.8rem;
+            }
+            
+            .current-price {
+                font-size: 2.3rem;
+            }
+            
+            .old-price {
+                font-size: 1.7rem;
+            }
+            
+            .features {
+                grid-template-columns: 1fr;
+            }
+            
+            .thumbnails {
+                flex-wrap: wrap;
+            }
+            
+            .thumbnail {
+                width: 80px;
+                height: 80px;
+            }
+            
+            .trust-badges {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .trust-badge {
+                width: 100%;
+                justify-content: center;
+            }
+            
+            .form-section {
+                padding: 20px;
+            }
+            
+            .submit-btn {
+                padding: 18px;
+                font-size: 1.1rem;
+            }
+            
+            .logo {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="progress-bar" id="progress-bar"></div>
+    
+    <div class="container">
+        <div class="header">
+            <div class="logo">SoportePro</div>
+            <h1 class="product-title">Soporte Triangular para Teléfono</h1>
+            
+            <div class="tiktok-cta">
+                <p>🔥 <strong>OFERTA VIRAL DE TIKTOK</strong> - 50% DE DESCUENTO</p>
+            </div>
+        </div>
 
+        <div class="image-container">
+            <img id="main-image" src="https://i.postimg.cc/W1YnQv4k/IMG-9697.jpg" alt="Soporte Triangular para Teléfono" class="main-image">
+            
+            <div class="thumbnails">
+                <img src="https://i.postimg.cc/W1YnQv4k/IMG-9697.jpg" alt="Vista frontal del soporte" class="thumbnail active" data-image="https://i.postimg.cc/W1YnQv4k/IMG-9697.jpg">
+                <img src="https://i.postimg.cc/pXt1ZR9V/IMG-9699.jpg" alt="Vista lateral del soporte" class="thumbnail" data-image="https://i.postimg.cc/pXt1ZR9V/IMG-9699.jpg">
+            </div>
+        </div>
+
+        <div class="price">
+            <span class="current-price">$30.000</span>
+            <span class="old-price">$60.000</span>
+            <span class="discount">50% OFF</span>
+        </div>
+
+        <div class="features">
+            <div class="feature">
+                <i class="fas fa-sync-alt"></i>
+                <h3>Rotación 360°</h3>
+                <p>Gira en todas direcciones para el ángulo perfecto</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-mobile-alt"></i>
+                <h3>Compatibilidad Total</h3>
+                <p>Funciona con todos los modelos de teléfonos</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-expand-arrows-alt"></i>
+                <h3>Base Ajustable</h3>
+                <p>Soporte triangular con clip para máxima estabilidad</p>
+            </div>
+        </div>
+
+        <div class="form-section">
+            <h2 class="form-title">📦 Completa Tus Datos de Envío</h2>
+            
+            <form id="shipping-form">
+                <input type="hidden" name="_subject" value="🚀 NUEVO PEDIDO - Soporte Triangular">
+                <input type="hidden" name="_replyto" value="no-reply@soportepro.com">
+                
+                <div class="form-group">
+                    <label class="form-label">Nombre completo <span class="required">*</span></label>
+                    <input type="text" class="form-input" name="nombre" required placeholder="Ej: María González">
+                </div>
+                
+                <div class="form-group">
+                    <label class="form-label">Número de WhatsApp <span class="required">*</span></label>
+                    <input type="tel" class="form-input" name="whatsapp" required placeholder="Ej: +57 300 123 4567">
+                </div>
+                
+                <div class="form-group">
+                    <label class="form-label">Correo electrónico <span class="required">*</span></label>
+                    <input type="email" class="form-input" name="email" required placeholder="Ej: tu@email.com">
+                </div>
+                
+                <div class="form-group">
+                    <label class="form-label">Dirección completa <span class="required">*</span></label>
+                    <input type="text" class="form-input" name="direccion" required placeholder="Dirección, ciudad, departamento">
+                </div>
+                
+                <div class="form-group">
+                    <label class="form-label">Documento de identidad</label>
+                    <input type="text" class="form-input" name="documento" placeholder="CC, CE o pasaporte">
+                </div>
+                
+                <button type="submit" class="submit-btn" id="submit-btn">
+                    <span class="btn-text"><i class="fas fa-check-circle"></i> CONFIRMAR DATOS Y PROCEDER AL PAGO</span>
+                    <div class="loading-overlay">
+                        <span class="loading"></span> ENVIANDO DATOS...
+                    </div>
+                </button>
+                
+                <div class="success-message" id="success-message">
+                    <i class="fas fa-check-circle"></i> ¡Datos enviados correctamente! Redirigiendo a la pasarela de pago...
+                </div>
+            </form>
+        </div>
+
+        <div class="trust-badges">
+            <div class="trust-badge">
+                <i class="fas fa-shield-alt"></i>
+                <span>Datos protegidos</span>
+            </div>
+            <div class="trust-badge">
+                <i class="fas fa-truck"></i>
+                <span>Envío gratis</span>
+            </div>
+            <div class="trust-badge">
+                <i class="fas fa-undo"></i>
+                <span>Garantía 30 días</span>
+            </div>
+            <div class="trust-badge">
+                <i class="fas fa-check-circle"></i>
+                <span>+5,000 vendidos</span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Cambiar imagen principal al hacer clic en miniaturas
+        document.querySelectorAll('.thumbnail').forEach(thumbnail => {
+            thumbnail.addEventListener('click', function() {
+                document.getElementById('main-image').src = this.dataset.image;
+                document.querySelectorAll('.thumbnail').forEach(t => t.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
         
+        // Manejo del formulario
+        document.getElementById('shipping-form').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const submitBtn = document.getElementById('submit-btn');
+            const successMessage = document.getElementById('success-message');
+            const progressBar = document.getElementById('progress-bar');
+            const requiredFields = this.querySelectorAll('[required]');
+            let allValid = true;
+            
+            // Validar campos
+            requiredFields.forEach(field => {
+                if (!field.value.trim()) {
+                    field.style.borderColor = '#ff0050';
+                    allValid = false;
+                } else {
+                    field.style.borderColor = '';
+                }
+            });
+            
+            if (!allValid) {
+                alert('⚠️ Por favor completa todos los campos obligatorios.');
+                return;
+            }
+            
+            // Deshabilitar botón y mostrar carga
+            submitBtn.disabled = true;
+            submitBtn.classList.add('loading');
+            progressBar.style.width = '30%';
+            
+            try {
+                // Enviar datos por correo usando FormSubmit
+                const formData = new FormData(this);
+                
+                // Actualizar barra de progreso
+                progressBar.style.width = '60%';
+                
+                // Usar FormSubmit.co para enviar el correo
+                const response = await fetch('https://formsubmit.co/ajax/davidresyes2095@gmail.com', {
+                    method: 'POST',
+                    headers: { 
+                        'Content-Type': 'application/json',
+                        'Accept': 'application/json'
+                    },
+                    body: JSON.stringify(Object.fromEntries(formData))
+                });
+                
+                if (response.ok) {
+                    // Actualizar barra de progreso
+                    progressBar.style.width = '100%';
+                    
+                    // Mostrar mensaje de éxito
+                    successMessage.style.display = 'block';
+                    
+                    // Redirigir después de 2 segundos
+                    setTimeout(() => {
+                        window.location.href = 'https://checkout.bold.co/payment/LNK_ZK7AENJZU9';
+                    }, 2000);
+                } else {
+                    throw new Error('Error al enviar el formulario');
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                progressBar.style.width = '0';
+                alert('❌ Ocurrió un error al enviar tus datos. Por favor, intenta nuevamente.');
+                submitBtn.disabled = false;
+                submitBtn.classList.remove('loading');
+            }
+        });
         
+        // Precargar imágenes para mejor experiencia
+        function preloadImages() {
+            const imageUrls = [
+                'https://i.postimg.cc/W1YnQv4k/IMG-9697.jpg',
+                'https://i.postimg.cc/pXt1ZR9V/IMG-9699.jpg'
+            ];
+            
+            imageUrls.forEach(url => {
+                const img = new Image();
+                img.src = url;
+            });
+        }
         
+        // Iniciar precarga de imágenes
+        window.addEventListener('load', preloadImages);
+    </script>
+</body>
+</html>
           
                 
                 
