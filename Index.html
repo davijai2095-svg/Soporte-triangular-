@@ -3,25 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Soporte Triangular para Teléfono | Oferta Exclusiva 50% OFF</title>
-    <meta name="description" content="Soporte triangular profesional para teléfono con rotación 360°. Oferta especial con 50% de descuento y envío gratis.">
-    
-    <!-- Meta tags para redes sociales -->
-    <meta property="og:title" content="Soporte Triangular para Teléfono - 50% OFF">
-    <meta property="og:description" content="¡Oferta exclusiva! Soporte triangular con rotación 360° y envío gratis">
-    <meta property="og:image" content="https://i.postimg.cc/W1YnQv4k/IMG-9697.jpg">
-    <meta property="og:url" content="https://tu-dominio.com">
-    <meta property="og:type" content="website">
-    <meta name="twitter:card" content="summary_large_image">
-    
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans&display=swap" rel="stylesheet">
+    <title>Soporte Triangular 360° - Graba Sin Usar Las Manos | 50% OFF TikTok</title>
+    <meta name="description" content="Soporte triangular giratorio 360° para creadores de contenido. Perfecto para TikTok, transmisiones en vivo y videos profesionales. ¡50% OFF y envío gratis!">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
             --primary: #ff0050;
             --secondary: #00f2ea;
-            --dark: #121212;
-            --light: #ffffff;
             --accent: #ffcc00;
         }
         
@@ -29,19 +17,23 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            font-family: 'Segoe UI', system-ui, sans-serif;
         }
         
         body {
-            font-family: 'Montserrat', sans-serif;
-            background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
             color: white;
+            line-height: 1.6;
             min-height: 100vh;
-            padding: 20px;
         }
         
         .container {
-            max-width: 1000px;
+            max-width: 1200px;
             margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .content-wrapper {
             background: rgba(255, 255, 255, 0.05);
             border-radius: 20px;
             padding: 30px;
@@ -50,6 +42,7 @@
             box-shadow: 0 20px 40px rgba(0,0,0,0.3);
         }
         
+        /* Header mejorado para CRO */
         .header {
             text-align: center;
             margin-bottom: 30px;
@@ -72,17 +65,46 @@
             text-shadow: 0 2px 5px rgba(0,0,0,0.5);
         }
         
+        /* Hero Section optimizada */
+        .hero-section {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 40px;
+            margin: 40px 0;
+        }
+        
+        .hero-content {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .hero-title {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            background: linear-gradient(45deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .hero-subtitle {
+            font-size: 1.3rem;
+            margin-bottom: 25px;
+            color: #ddd;
+        }
+        
         .image-container {
+            flex: 1;
+            min-width: 300px;
             display: flex;
             flex-direction: column;
             align-items: center;
             gap: 20px;
-            margin: 30px 0;
         }
         
         .main-image {
             width: 100%;
-            max-width: 600px;
+            max-width: 500px;
             border-radius: 20px;
             box-shadow: 0 15px 35px rgba(0,0,0,0.5);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -97,13 +119,13 @@
         .thumbnails {
             display: flex;
             justify-content: center;
-            gap: 20px;
-            margin-top: 20px;
+            gap: 15px;
+            margin-top: 15px;
         }
         
         .thumbnail {
-            width: 90px;
-            height: 90px;
+            width: 80px;
+            height: 80px;
             border-radius: 12px;
             cursor: pointer;
             opacity: 0.7;
@@ -119,19 +141,29 @@
             border-color: var(--primary);
         }
         
+        /* Sección de precio optimizada */
+        .price-section {
+            text-align: center;
+            margin: 40px 0;
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.08);
+            border-radius: 15px;
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+        
         .price {
             display: flex;
             justify-content: center;
             align-items: center;
             gap: 20px;
-            margin: 30px 0;
+            margin: 20px 0;
             flex-wrap: wrap;
         }
         
         .current-price {
-            font-size: 2.8rem;
+            font-size: 3rem;
             font-weight: 800;
-            color: #ffcc00;
+            color: var(--accent);
             text-shadow: 0 2px 5px rgba(0,0,0,0.5);
         }
         
@@ -151,16 +183,71 @@
             box-shadow: 0 5px 15px rgba(255, 0, 80, 0.3);
         }
         
+        .urgency-banner {
+            background: rgba(255, 0, 80, 0.2);
+            border: 1px solid var(--primary);
+            border-radius: 10px;
+            padding: 15px;
+            margin: 20px 0;
+            text-align: center;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(255, 0, 80, 0.4); }
+            70% { box-shadow: 0 0 0 10px rgba(255, 0, 80, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(255, 0, 80, 0); }
+        }
+        
+        /* CTA principal mejorado */
+        .primary-cta {
+            text-align: center;
+            margin: 30px 0;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(45deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 20px 40px;
+            border-radius: 50px;
+            font-size: 1.4rem;
+            font-weight: 700;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 20px rgba(255, 0, 80, 0.4);
+            border: none;
+            cursor: pointer;
+            margin: 10px;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 25px rgba(255, 0, 80, 0.5);
+        }
+        
+        /* Sección de beneficios optimizada */
+        .benefits-section {
+            margin: 50px 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 2.2rem;
+            margin-bottom: 40px;
+            color: white;
+        }
+        
         .features {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 25px;
             margin: 40px 0;
         }
         
         .feature {
             text-align: center;
-            padding: 25px;
+            padding: 30px 20px;
             background: rgba(255, 255, 255, 0.08);
             border-radius: 15px;
             transition: all 0.3s ease;
@@ -174,38 +261,161 @@
         }
         
         .feature i {
-            font-size: 2.8rem;
-            margin-bottom: 15px;
-            color: #00f2ea;
+            font-size: 3rem;
+            margin-bottom: 20px;
             background: linear-gradient(45deg, var(--secondary), var(--primary));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
         
         .feature h3 {
-            margin-bottom: 12px;
-            font-size: 1.4rem;
+            margin-bottom: 15px;
+            font-size: 1.5rem;
         }
         
+        /* Sección de demostración */
+        .demo-section {
+            margin: 50px 0;
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            text-align: center;
+        }
+        
+        .demo-title {
+            font-size: 2rem;
+            margin-bottom: 30px;
+            color: var(--secondary);
+        }
+        
+        .demo-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .demo-text {
+            flex: 1;
+            min-width: 300px;
+            text-align: left;
+        }
+        
+        .demo-text ul {
+            list-style: none;
+            margin: 20px 0;
+        }
+        
+        .demo-text li {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .demo-text i {
+            color: var(--secondary);
+            margin-right: 10px;
+            font-size: 1.2rem;
+        }
+        
+        .demo-media {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .demo-video {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+        
+        /* Sección de testimonios */
+        .testimonials-section {
+            margin: 50px 0;
+        }
+        
+        .testimonials {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-top: 40px;
+        }
+        
+        .testimonial {
+            background: rgba(255, 255, 255, 0.08);
+            padding: 25px;
+            border-radius: 15px;
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+        
+        .testimonial-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        
+        .testimonial-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: linear-gradient(45deg, var(--primary), var(--secondary));
+            margin-right: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+        
+        .stars {
+            color: var(--accent);
+            margin-bottom: 10px;
+        }
+        
+        /* Sección de garantía */
+        .guarantee-section {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            padding: 50px 30px;
+            border-radius: 15px;
+            text-align: center;
+            margin: 50px 0;
+        }
+        
+        .guarantee-badges {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 30px;
+        }
+        
+        .guarantee-badge {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+            min-width: 150px;
+        }
+        
+        /* Formulario optimizado */
         .form-section {
             background: rgba(255, 255, 255, 0.08);
-            padding: 30px;
+            padding: 40px 30px;
             border-radius: 15px;
-            margin: 30px 0;
+            margin: 50px 0;
             border: 1px solid rgba(255,255,255,0.05);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
         }
         
         .form-title {
             text-align: center;
-            margin-bottom: 25px;
-            color: #00f2ea;
-            font-size: 1.7rem;
-            text-shadow: 0 2px 5px rgba(0,0,0,0.3);
+            margin-bottom: 30px;
+            color: var(--secondary);
+            font-size: 1.8rem;
         }
         
         .form-group {
-            margin-bottom: 22px;
+            margin-bottom: 25px;
         }
         
         .form-label {
@@ -229,18 +439,18 @@
         
         .form-input:focus {
             outline: none;
-            border-color: #00f2ea;
+            border-color: var(--secondary);
             background: rgba(255, 255, 255, 0.15);
             box-shadow: 0 0 15px rgba(0, 242, 234, 0.3);
         }
         
         .required {
-            color: #ff0050;
+            color: var(--primary);
         }
         
         .submit-btn {
             width: 100%;
-            background: linear-gradient(45deg, #ff0050, #00f2ea);
+            background: linear-gradient(45deg, var(--primary), var(--secondary));
             color: white;
             padding: 20px;
             border: none;
@@ -260,38 +470,11 @@
             box-shadow: 0 15px 25px rgba(255, 0, 80, 0.5);
         }
         
-        .submit-btn:active {
-            transform: translateY(-2px);
-        }
-        
         .submit-btn:disabled {
             opacity: 0.7;
             cursor: not-allowed;
             transform: none;
             box-shadow: none;
-        }
-        
-        .submit-btn .btn-text {
-            position: relative;
-            z-index: 2;
-        }
-        
-        .submit-btn .loading-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(45deg, #ff0050, #00f2ea);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            opacity: 0;
-            transition: opacity 0.3s ease;
-        }
-        
-        .submit-btn.loading .loading-overlay {
-            opacity: 1;
         }
         
         .trust-badges {
@@ -316,74 +499,84 @@
         .trust-badge:hover {
             transform: scale(1.05);
             background: rgba(255, 255, 255, 0.15);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
         }
         
         .trust-badge i {
-            color: #ffcc00;
+            color: var(--accent);
             font-size: 1.3rem;
         }
         
-        .success-message {
-            background: rgba(0, 255, 0, 0.1);
-            border: 1px solid rgba(0, 255, 0, 0.3);
-            border-radius: 10px;
-            padding: 20px;
+        /* Footer mejorado */
+        footer {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 40px 0 20px;
+            margin-top: 50px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+        
+        .footer-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 30px;
+        }
+        
+        .footer-section {
+            flex: 1;
+            min-width: 200px;
+        }
+        
+        .footer-section h3 {
+            margin-bottom: 20px;
+            color: var(--secondary);
+        }
+        
+        .footer-links a {
+            display: block;
+            color: #ccc;
+            text-decoration: none;
+            margin-bottom: 10px;
+            transition: color 0.3s;
+        }
+        
+        .footer-links a:hover {
+            color: white;
+        }
+        
+        .payment-methods {
+            display: flex;
+            gap: 10px;
+            margin-top: 15px;
+            flex-wrap: wrap;
+        }
+        
+        .payment-icon {
+            width: 50px;
+            height: 30px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+        }
+        
+        .footer-bottom {
             text-align: center;
-            margin-top: 25px;
-            display: none;
-            animation: fadeIn 0.5s ease;
+            padding-top: 30px;
+            margin-top: 30px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            font-size: 0.9rem;
+            color: #999;
         }
         
-        .loading {
-            display: inline-block;
-            width: 22px;
-            height: 22px;
-            border: 3px solid rgba(255,255,255,.3);
-            border-radius: 50%;
-            border-top-color: #fff;
-            animation: spin 1s ease-in-out infinite;
-        }
-        
-        .progress-bar {
-            height: 5px;
-            width: 0;
-            background: linear-gradient(45deg, #ff0050, #00f2ea);
-            position: fixed;
-            top: 0;
-            left: 0;
-            z-index: 9999;
-            transition: width 0.5s ease;
-            box-shadow: 0 0 10px rgba(255, 0, 80, 0.5);
-        }
-        
-        .tiktok-cta {
-            text-align: center;
-            margin: 25px 0;
-            padding: 18px;
-            background: rgba(255, 0, 80, 0.1);
-            border-radius: 12px;
-            border: 1px solid var(--primary);
-            box-shadow: 0 5px 15px rgba(255, 0, 80, 0.2);
-        }
-        
-        .tiktok-cta p {
-            font-size: 1.2rem;
-            font-weight: 600;
-            margin: 0;
-        }
-        
-        @keyframes spin {
-            to { transform: rotate(360deg); }
-        }
-        
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-        
+        /* Responsive */
         @media (max-width: 768px) {
             .container {
+                padding: 15px;
+            }
+            
+            .content-wrapper {
                 padding: 20px;
             }
             
@@ -391,8 +584,12 @@
                 font-size: 1.8rem;
             }
             
+            .hero-title {
+                font-size: 2rem;
+            }
+            
             .current-price {
-                font-size: 2.3rem;
+                font-size: 2.5rem;
             }
             
             .old-price {
@@ -407,11 +604,6 @@
                 flex-wrap: wrap;
             }
             
-            .thumbnail {
-                width: 80px;
-                height: 80px;
-            }
-            
             .trust-badges {
                 flex-direction: column;
                 align-items: center;
@@ -422,129 +614,299 @@
                 justify-content: center;
             }
             
-            .form-section {
-                padding: 20px;
+            .footer-content {
+                flex-direction: column;
             }
             
-            .submit-btn {
-                padding: 18px;
-                font-size: 1.1rem;
-            }
-            
-            .logo {
-                font-size: 2.2rem;
+            .cta-button {
+                padding: 18px 30px;
+                font-size: 1.2rem;
             }
         }
     </style>
 </head>
 <body>
-    <div class="progress-bar" id="progress-bar"></div>
-    
     <div class="container">
-        <div class="header">
-            <div class="logo">SoportePro</div>
-            <h1 class="product-title">Soporte Triangular para Teléfono</h1>
-            
-            <div class="tiktok-cta">
-                <p>🔥 <strong>OFERTA VIRAL DE TIKTOK</strong> - 50% DE DESCUENTO</p>
-            </div>
-        </div>
+        <div class="content-wrapper">
+            <!-- Header Section -->
+            <header class="header">
+                <div class="logo">SoportePro</div>
+                <h1 class="product-title">Soporte Triangular para Teléfono</h1>
+                
+                <div class="urgency-banner">
+                    <p><i class="fas fa-fire"></i> <strong>OFERTA EXCLUSIVA TIKTOK - 50% DE DESCUENTO</strong> - ¡Últimas unidades!</p>
+                </div>
+            </header>
 
-        <div class="image-container">
-            <img id="main-image" src="https://i.postimg.cc/W1YnQv4k/IMG-9697.jpg" alt="Soporte Triangular para Teléfono" class="main-image">
-            
-            <div class="thumbnails">
-                <img src="https://i.postimg.cc/W1YnQv4k/IMG-9697.jpg" alt="Vista frontal del soporte" class="thumbnail active" data-image="https://i.postimg.cc/W1YnQv4k/IMG-9697.jpg">
-                <img src="https://i.postimg.cc/pXt1ZR9V/IMG-9699.jpg" alt="Vista lateral del soporte" class="thumbnail" data-image="https://i.postimg.cc/pXt1ZR9V/IMG-9699.jpg">
-            </div>
-        </div>
-
-        <div class="price">
-            <span class="current-price">$30.000</span>
-            <span class="old-price">$60.000</span>
-            <span class="discount">50% OFF</span>
-        </div>
-
-        <div class="features">
-            <div class="feature">
-                <i class="fas fa-sync-alt"></i>
-                <h3>Rotación 360°</h3>
-                <p>Gira en todas direcciones para el ángulo perfecto</p>
-            </div>
-            <div class="feature">
-                <i class="fas fa-mobile-alt"></i>
-                <h3>Compatibilidad Total</h3>
-                <p>Funciona con todos los modelos de teléfonos</p>
-            </div>
-            <div class="feature">
-                <i class="fas fa-expand-arrows-alt"></i>
-                <h3>Base Ajustable</h3>
-                <p>Soporte triangular con clip para máxima estabilidad</p>
-            </div>
-        </div>
-
-        <div class="form-section">
-            <h2 class="form-title">📦 Completa Tus Datos de Envío</h2>
-            
-            <form id="shipping-form">
-                <input type="hidden" name="_subject" value="🚀 NUEVO PEDIDO - Soporte Triangular">
-                <input type="hidden" name="_replyto" value="no-reply@soportepro.com">
-                
-                <div class="form-group">
-                    <label class="form-label">Nombre completo <span class="required">*</span></label>
-                    <input type="text" class="form-input" name="nombre" required placeholder="Ej: María González">
-                </div>
-                
-                <div class="form-group">
-                    <label class="form-label">Número de WhatsApp <span class="required">*</span></label>
-                    <input type="tel" class="form-input" name="whatsapp" required placeholder="Ej: +57 300 123 4567">
-                </div>
-                
-                <div class="form-group">
-                    <label class="form-label">Correo electrónico <span class="required">*</span></label>
-                    <input type="email" class="form-input" name="email" required placeholder="Ej: tu@email.com">
-                </div>
-                
-                <div class="form-group">
-                    <label class="form-label">Dirección completa <span class="required">*</span></label>
-                    <input type="text" class="form-input" name="direccion" required placeholder="Dirección, ciudad, departamento">
-                </div>
-                
-                <div class="form-group">
-                    <label class="form-label">Documento de identidad</label>
-                    <input type="text" class="form-input" name="documento" placeholder="CC, CE o pasaporte">
-                </div>
-                
-                <button type="submit" class="submit-btn" id="submit-btn">
-                    <span class="btn-text"><i class="fas fa-check-circle"></i> CONFIRMAR DATOS Y PROCEDER AL PAGO</span>
-                    <div class="loading-overlay">
-                        <span class="loading"></span> ENVIANDO DATOS...
+            <!-- Hero Section -->
+            <section class="hero-section">
+                <div class="hero-content">
+                    <h2 class="hero-title">Graba en 360° Sin Usar Las Manos</h2>
+                    <p class="hero-subtitle">Ideal para creadores de TikTok, transmisiones en vivo y videos profesionales</p>
+                    
+                    <div class="primary-cta">
+                        <a href="#formulario" class="cta-button">
+                            <i class="fas fa-shopping-cart"></i> COMPRAR AHORA - 50% OFF
+                        </a>
+                        <p style="margin-top: 15px; font-size: 0.9rem;">
+                            <i class="fas fa-shipping-fast"></i> Envío gratis • 
+                            <i class="fas fa-shield-alt"></i> Garantía 30 días
+                        </p>
                     </div>
-                </button>
-                
-                <div class="success-message" id="success-message">
-                    <i class="fas fa-check-circle"></i> ¡Datos enviados correctamente! Redirigiendo a la pasarela de pago...
                 </div>
-            </form>
-        </div>
+                
+                <div class="image-container">
+                    <img id="main-image" src="https://i.postimg.cc/W1YnQv4k/IMG-9697.jpg" alt="Soporte Triangular para Teléfono" class="main-image">
+                    
+                    <div class="thumbnails">
+                        <img src="https://i.postimg.cc/W1YnQv4k/IMG-9697.jpg" alt="Vista frontal del soporte" class="thumbnail active" data-image="https://i.postimg.cc/W1YnQv4k/IMG-9697.jpg">
+                        <img src="https://i.postimg.cc/pXt1ZR9V/IMG-9699.jpg" alt="Vista lateral del soporte" class="thumbnail" data-image="https://i.postimg.cc/pXt1ZR9V/IMG-9699.jpg">
+                    </div>
+                </div>
+            </section>
 
-        <div class="trust-badges">
-            <div class="trust-badge">
-                <i class="fas fa-shield-alt"></i>
-                <span>Datos protegidos</span>
+            <!-- Price Section -->
+            <section class="price-section">
+                <div class="price">
+                    <span class="current-price">$30.000</span>
+                    <span class="old-price">$60.000</span>
+                    <span class="discount">50% OFF</span>
+                </div>
+                <p style="margin-top: 15px; font-size: 1.1rem;">Pago seguro • Envío gratis • Garantía de 30 días</p>
+            </section>
+
+            <!-- Benefits Section -->
+            <section class="benefits-section">
+                <h2 class="section-title">¿Por Qué Elegir Nuestro Soporte Triangular?</h2>
+                <div class="features">
+                    <div class="feature">
+                        <i class="fas fa-sync-alt"></i>
+                        <h3>Rotación 360° Completa</h3>
+                        <p>Gira en todas direcciones para capturar el ángulo perfecto en tus videos</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h3>Compatibilidad Universal</h3>
+                        <p>Funciona con todos los modelos de teléfonos, desde 4" hasta 7"</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-expand-arrows-alt"></i>
+                        <h3>Base Triangular Estable</h3>
+                        <p>Diseño triangular con clip ajustable para máxima estabilidad</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-bolt"></i>
+                        <h3>Fácil Instalación</h3>
+                        <p>Montaje rápido en cualquier superficie en menos de 30 segundos</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Demo Section -->
+            <section class="demo-section">
+                <h2 class="demo-title">Perfecto Para Tus Creaciones</h2>
+                <div class="demo-content">
+                    <div class="demo-text">
+                        <p>Nuestro soporte giratorio 360° te permite crear contenido profesional sin complicaciones:</p>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Videos de TikTok con ángulos dinámicos</li>
+                            <li><i class="fas fa-check"></i> Transmisiones en vivo sin interrupciones</li>
+                            <li><i class="fas fa-check"></i> Videollamadas profesionales manos libres</li>
+                            <li><i class="fas fa-check"></i> Grabaciones estables para tus redes sociales</li>
+                        </ul>
+                        <a href="#formulario" class="cta-button" style="margin-top: 20px;">
+                            <i class="fas fa-play-circle"></i> VER DEMOSTRACIÓN
+                        </a>
+                    </div>
+                    <div class="demo-media">
+                        <img src="https://i.postimg.cc/W1YnQv4k/IMG-9697.jpg" alt="Soporte en uso" class="demo-video">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Testimonials Section -->
+            <section class="testimonials-section">
+                <h2 class="section-title">Lo Que Dicen Nuestros Clientes</h2>
+                <div class="testimonials">
+                    <div class="testimonial">
+                        <div class="testimonial-header">
+                            <div class="testimonial-avatar">MG</div>
+                            <div>
+                                <h3>María G.</h3>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p>"Increíble para mis videos de TikTok. La rotación 360° me permite crear transiciones suaves que antes eran imposibles. ¡Mis seguidores han notado la diferencia!"</p>
+                    </div>
+                    <div class="testimonial">
+                        <div class="testimonial-header">
+                            <div class="testimonial-avatar">CR</div>
+                            <div>
+                                <h3>Carlos R.</h3>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p>"Lo uso para mis transmisiones en vivo. La sujeción es muy segura y la rotación fluida. El envío fue rápido y el producto superó mis expectativas."</p>
+                    </div>
+                    <div class="testimonial">
+                        <div class="testimonial-header">
+                            <div class="testimonial-avatar">AL</div>
+                            <div>
+                                <h3>Ana L.</h3>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p>"Perfecto para videollamadas de trabajo. Ya no tengo que sostener el teléfono durante horas. La calidad es excelente y muy fácil de instalar."</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Guarantee Section -->
+            <section class="guarantee-section">
+                <h2 style="color: white; margin-bottom: 20px;">Compra Con Confianza Total</h2>
+                <p style="color: rgba(255,255,255,0.9); margin-bottom: 30px;">Tu satisfacción está 100% garantizada</p>
+                <div class="guarantee-badges">
+                    <div class="guarantee-badge">
+                        <i class="fas fa-shipping-fast"></i>
+                        <p>Envío Gratis</p>
+                    </div>
+                    <div class="guarantee-badge">
+                        <i class="fas fa-calendar-check"></i>
+                        <p>Garantía 30 Días</p>
+                    </div>
+                    <div class="guarantee-badge">
+                        <i class="fas fa-undo"></i>
+                        <p>Devolución Fácil</p>
+                    </div>
+                    <div class="guarantee-badge">
+                        <i class="fas fa-headset"></i>
+                        <p>Soporte 24/7</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Trust Badges -->
+            <div class="trust-badges">
+                <div class="trust-badge">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>Datos protegidos</span>
+                </div>
+                <div class="trust-badge">
+                    <i class="fas fa-truck"></i>
+                    <span>Envío gratis</span>
+                </div>
+                <div class="trust-badge">
+                    <i class="fas fa-undo"></i>
+                    <span>Garantía 30 días</span>
+                </div>
+                <div class="trust-badge">
+                    <i class="fas fa-check-circle"></i>
+                    <span>+5,000 vendidos</span>
+                </div>
             </div>
-            <div class="trust-badge">
-                <i class="fas fa-truck"></i>
-                <span>Envío gratis</span>
-            </div>
-            <div class="trust-badge">
-                <i class="fas fa-undo"></i>
-                <span>Garantía 30 días</span>
-            </div>
-            <div class="trust-badge">
-                <i class="fas fa-check-circle"></i>
-                <span>+5,000 vendidos</span>
-            </div>
+
+            <!-- Form Section -->
+            <section class="form-section" id="formulario">
+                <h2 class="form-title">¡Últimas Unidades Disponibles!</h2>
+                <p style="text-align: center; margin-bottom: 30px; color: #ddd;">Completa tus datos y asegura tu soporte triangular con 50% de descuento</p>
+                
+                <form id="shipping-form">
+                    <input type="hidden" name="_subject" value="🚀 NUEVO PEDIDO - Soporte Triangular">
+                    <input type="hidden" name="_replyto" value="no-reply@soportepro.com">
+                    
+                    <div class="form-group">
+                        <label class="form-label">Nombre completo <span class="required">*</span></label>
+                        <input type="text" class="form-input" name="nombre" required placeholder="Ej: María González">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">Número de WhatsApp <span class="required">*</span></label>
+                        <input type="tel" class="form-input" name="whatsapp" required placeholder="Ej: +57 300 123 4567">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">Correo electrónico <span class="required">*</span></label>
+                        <input type="email" class="form-input" name="email" required placeholder="Ej: tu@email.com">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">Dirección completa <span class="required">*</span></label>
+                        <input type="text" class="form-input" name="direccion" required placeholder="Dirección, ciudad, departamento">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">Documento de identidad (para la guía de envío)</label>
+                        <input type="text" class="form-input" name="documento" placeholder="CC, CE o pasaporte">
+                        <small style="color: #999; display: block; margin-top: 5px;">Solo necesario para procesar el envío con la transportadora</small>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn" id="submit-btn">
+                        <i class="fas fa-lock"></i> CONFIRMAR DATOS Y PROCEDER AL PAGO - $30.000
+                    </button>
+                    
+                    <div class="trust-badges" style="margin-top: 30px;">
+                        <div class="trust-badge">
+                            <i class="fas fa-lock"></i>
+                            <span>Pago 100% seguro</span>
+                        </div>
+                        <div class="trust-badge">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Datos encriptados</span>
+                        </div>
+                    </div>
+                </form>
+            </section>
+
+            <!-- Footer -->
+            <footer>
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <h3>SoportePro</h3>
+                        <p>El soporte giratorio profesional para creadores de contenido.</p>
+                        <div class="payment-methods">
+                            <div class="payment-icon">VISA</div>
+                            <div class="payment-icon">MC</div>
+                            <div class="payment-icon">PP</div>
+                            <div class="payment-icon">AMEX</div>
+                        </div>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Enlaces Rápidos</h3>
+                        <div class="footer-links">
+                            <a href="#">Inicio</a>
+                            <a href="#">Cómo Funciona</a>
+                            <a href="#">Testimonios</a>
+                            <a href="#">Contacto</a>
+                        </div>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Legal</h3>
+                        <div class="footer-links">
+                            <a href="#">Política de Privacidad</a>
+                            <a href="#">Términos y Condiciones</a>
+                            <a href="#">Política de Devoluciones</a>
+                            <a href="#">Política de Envíos</a>
+                        </div>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Contacto</h3>
+                        <div class="footer-links">
+                            <a href="mailto:davidresyes2095@gmail.com">davidresyes2095@gmail.com</a>
+                            <a href="tel:+573000000000">+57 300 000 0000</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2023 SoportePro. Todos los derechos reservados.</p>
+                    <p style="margin-top: 10px;">La información proporcionada se utiliza únicamente para procesar tu pedido y gestionar el envío. No compartimos tus datos con terceros.</p>
+                </div>
+            </footer>
         </div>
     </div>
 
@@ -557,14 +919,12 @@
                 this.classList.add('active');
             });
         });
-        
+
         // Manejo del formulario
         document.getElementById('shipping-form').addEventListener('submit', async function(e) {
             e.preventDefault();
             
             const submitBtn = document.getElementById('submit-btn');
-            const successMessage = document.getElementById('success-message');
-            const progressBar = document.getElementById('progress-bar');
             const requiredFields = this.querySelectorAll('[required]');
             let allValid = true;
             
@@ -585,15 +945,11 @@
             
             // Deshabilitar botón y mostrar carga
             submitBtn.disabled = true;
-            submitBtn.classList.add('loading');
-            progressBar.style.width = '30%';
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> PROCESANDO PEDIDO...';
             
             try {
                 // Enviar datos por correo usando FormSubmit
                 const formData = new FormData(this);
-                
-                // Actualizar barra de progreso
-                progressBar.style.width = '60%';
                 
                 // Usar FormSubmit.co para enviar el correo
                 const response = await fetch('https://formsubmit.co/ajax/davidresyes2095@gmail.com', {
@@ -606,47 +962,20 @@
                 });
                 
                 if (response.ok) {
-                    // Actualizar barra de progreso
-                    progressBar.style.width = '100%';
-                    
-                    // Mostrar mensaje de éxito
-                    successMessage.style.display = 'block';
-                    
-                    // Redirigir después de 2 segundos
+                    // Redirigir a la pasarela de pago
                     setTimeout(() => {
                         window.location.href = 'https://checkout.bold.co/payment/LNK_ZK7AENJZU9';
-                    }, 2000);
+                    }, 1000);
                 } else {
                     throw new Error('Error al enviar el formulario');
                 }
             } catch (error) {
                 console.error('Error:', error);
-                progressBar.style.width = '0';
-                alert('❌ Ocurrió un error al enviar tus datos. Por favor, intenta nuevamente.');
-                submitBtn.disabled = false;
-                submitBtn.classList.remove('loading');
-            }
-        });
-        
-        // Precargar imágenes para mejor experiencia
-        function preloadImages() {
-            const imageUrls = [
-                'https://i.postimg.cc/W1YnQv4k/IMG-9697.jpg',
-                'https://i.postimg.cc/pXt1ZR9V/IMG-9699.jpg'
-            ];
+                alert('❌ Ocurrió un error al enviar tus datos
             
-            imageUrls.forEach(url => {
-                const img = new Image();
-                img.src = url;
-            });
-        }
         
-        // Iniciar precarga de imágenes
-        window.addEventListener('load', preloadImages);
-    </script>
-</body>
-</html>
-          
-                
-                
+    
+            
+
+            
             
